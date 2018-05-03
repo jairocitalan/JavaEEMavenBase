@@ -14,7 +14,9 @@ public class CatalogFacadeEJB {
 
     @Inject
     CatalogService catalogService;
-
+    
+   
+    
     public UserTO getSimpleUser()
     {
         return catalogService.getUser();

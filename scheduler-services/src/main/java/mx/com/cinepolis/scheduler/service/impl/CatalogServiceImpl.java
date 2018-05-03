@@ -13,7 +13,7 @@ public class CatalogServiceImpl implements CatalogService{
      * {@inheritDoc}
      */
     @Override
-    public UserTO getUser() {
+    public  UserTO getUser() {
         UserTO userTO = new UserTO();
         userTO.setIdUser(1L);
         userTO.setName("Javier");
@@ -48,7 +48,7 @@ public class CatalogServiceImpl implements CatalogService{
 			}});
 			
 			
-		}else {
+		}else if(pais.equals("USA")) {
 				catalogsToList.add(new CatalogsTO() {{
 					setId(1);
 					setName("California");
