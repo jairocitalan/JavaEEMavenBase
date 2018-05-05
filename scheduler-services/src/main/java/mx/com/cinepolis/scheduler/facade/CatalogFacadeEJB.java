@@ -1,5 +1,6 @@
 package mx.com.cinepolis.scheduler.facade;
 
+import mx.com.arquitectura.base.model.UserDO;
 import mx.com.cinepolis.scheduler.commons.to.CatalogsTO;
 import mx.com.cinepolis.scheduler.commons.to.UserTO;
 import mx.com.cinepolis.scheduler.service.CatalogService;
@@ -25,4 +26,14 @@ public class CatalogFacadeEJB {
     public List<CatalogsTO> getEstadosList(String pais){
     	return catalogService.getEstados(pais);
     }
+    
+    public List<UserTO> getAllUser(){
+       return catalogService.getOutUser();
+    }
+    
+    public void  registerUser(UserTO userTO) {
+    	
+    catalogService.registerUser(userTO);
+    
 }
+    }

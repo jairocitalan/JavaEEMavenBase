@@ -8,6 +8,7 @@ import mx.com.cinepolis.scheduler.facade.CatalogFacadeEJB;
 import mx.com.cinepolis.scheduler.facade.GitHubFacadeEJB;
 
 import javax.ejb.EJB;
+import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -15,6 +16,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.GenericEntity;
+import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.MultivaluedMap;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
@@ -82,6 +84,23 @@ public class CatalogRest {
        GenericEntity<List<CatalogsTO>> entity= new GenericEntity<List<CatalogsTO>>(catalogToList) {};
        return Response.ok().entity(entity).build();
     }
+   
+   @GET
+   @Produces("application/json")
+   @Path("/users")
+   public Response getAllUser() {
+      List<UserTO> userToList= catalogFacadeEJB.getAllUser();
+      GenericEntity<List<UserTO>> entity= new GenericEntity<List<UserTO>>(userToList) {};
+      return Response.ok().entity(entity).build();
+   }
+   
+   @POST
+   @Consumes(MediaType.APPLICATION_JSON)
+   @Path("/register")
+   public void registarUser(UserTO userTO) {
+	   catalogFacadeEJB.registerUser(userTO);
+     
+   }
     
     
    /* @GET

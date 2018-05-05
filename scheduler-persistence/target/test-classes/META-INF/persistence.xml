@@ -3,9 +3,7 @@
     <persistence-unit name="SchedulePUTestHSQL" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <jta-data-source>jdbc/scheduleDSTest</jta-data-source>
-        <mapping-file>jpql-queries.xml</mapping-file>
-        <mapping-file>orm-hsql.xml</mapping-file>
-
+        
         <class>mx.com.arquitectura.base.model.ConnectionDataDO</class>
         <class>mx.com.arquitectura.base.model.CParametersDO</class>
         <class>mx.com.arquitectura.base.model.CRegionDO</class>

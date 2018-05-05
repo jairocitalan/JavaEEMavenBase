@@ -4,98 +4,76 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "K_USER")
+@Table(name = "CH_USER")
 public class UserDO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_USER")
     private Long idUser;
-    @Column(name = "DS_NAME")
-    private String dsName;
-    @Column(name = "DS_USERNAME")
-    private String dsUsername;
-    @Column(name = "DS_EMAIL")
-    private String dsEmail;
-    @Column(name = "FG_ACTIVE")
-    private boolean activeU;
-    @Column(name = "DT_LAST_MODIFICATION")
-    private Date lastModificationDate;
-    @Column(name = "ID_LAST_USER_MODIFIER")
-    private Long lastModificationUserId;
+    
+    @Column(name = "LOGIN")
+    private String login;
+    
+    @Column(name = "AVATAR_URL")
+    private String avatarUrl;
+    
+    @Column(name = "NAME")
+    private String name;
+    
+    @Column(name = "FOLLOWERS")
+    private int followers;
+    
+    @Column(name = "FOLLOWING")
+    private int following ;
 
-    /**
-     * Getter for idUser.
-     *
-     * @return
-     */
+	public Long getIdUser() {
+		return idUser;
+	}
 
-    public Long getIdUser() {
-        return idUser;
-    }
+	public void setIdUser(Long idUser) {
+		this.idUser = idUser;
+	}
 
-    /**
-     * Setter for idUser.
-     *
-     * @param idUser
-     */
-    public void setIdUser(Long idUser) {
-        this.idUser = idUser;
-    }
+	public String getLogin() {
+		return login;
+	}
 
-    /**
-     * Getter for dsName.
-     *
-     * @return
-     */
+	public void setLogin(String login) {
+		this.login = login;
+	}
 
-    public String getDsName() {
-        return dsName;
-    }
+	public String getAvatarUrl() {
+		return avatarUrl;
+	}
 
-    /**
-     * Setter for dsName.
-     *
-     * @param dsName
-     */
-    public void setDsName(String dsName) {
-        this.dsName = dsName;
-    }
+	public void setAvatarUrl(String avatarUrl) {
+		this.avatarUrl = avatarUrl;
+	}
 
-    /**
-     * Getter for dsUsername.
-     *
-     * @return
-     */
+	public String getName() {
+		return name;
+	}
 
-    public String getDsUsername() {
-        return dsUsername;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    /**
-     * Setter for dsUsername.
-     *
-     * @param dsUsername
-     */
-    public void setDsUsername(String dsUsername) {
-        this.dsUsername = dsUsername;
-    }
+	public int getFollowers() {
+		return followers;
+	}
 
-    /**
-     * Getter for dsEmail.
-     *
-     * @return
-     */
+	public void setFollowers(int followers) {
+		this.followers = followers;
+	}
 
-    public String getDsEmail() {
-        return dsEmail;
-    }
+	public int getFollowing() {
+		return following;
+	}
 
-    /**
-     * Setter for dsEmail.
-     *
-     * @param dsEmail
-     */
-    public void setDsEmail(String dsEmail) {
-        this.dsEmail = dsEmail;
-    }
+	public void setFollowing(int following) {
+		this.following = following;
+	}
+    
+
+    
 }
