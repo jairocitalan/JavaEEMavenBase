@@ -1,6 +1,8 @@
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\cinepolis\scheduler\data\persistence\dao\impl\UserDAOImpl.java
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\arquitectura\arquitectura\persistence\DAOException.java
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\arquitectura\arquitectura\persistence\DAOError.java
+C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\cinepolis\scheduler\data\persistence\dao\UsuariosDAO.java
+C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\cinepolis\scheduler\data\persistence\dao\impl\UsuariosDAOImpl.java
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\arquitectura\arquitectura\persistence\impl\BaseDAOImpl.java
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\cinepolis\scheduler\data\persistence\constants\Constants.java
 C:\Users\JAVA12\Desktop\web services\JavaEEMavenBase\scheduler-persistence\src\main\java\mx\com\arquitectura\arquitectura\persistence\BaseDAOJPA.java

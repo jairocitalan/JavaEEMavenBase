@@ -107,7 +107,7 @@ public class CatalogServiceImpl implements CatalogService{
 
 	@Override
 	public UserTO findById(Long id) {
-		// TODO Auto-generated method stub
+	
 		return null;
 	}
 

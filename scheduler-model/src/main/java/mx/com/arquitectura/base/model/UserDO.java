@@ -10,7 +10,7 @@ public class UserDO {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID_USER")
     private Long idUser;
-    
+     
     @Column(name = "LOGIN")
     private String login;
     
